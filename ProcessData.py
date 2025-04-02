@@ -35,7 +35,7 @@ def main():
     print(student_id)
   inFile.close()
   outFile.close()
-
+  
 def makeID(first, last, Idnum, major, line, year):
   print(first, last, Idnum, major, line, year)
   idlen = len(Idnum)
