@@ -7,7 +7,7 @@ import random
 
 def main():
 
-  
+  #Open the files we will be using
   inFile = open("names.dat", 'r')
   outFile = open("StudentList.csv", 'w')
   for line in inFile:
@@ -36,13 +36,13 @@ def main():
   inFile.close()
   outFile.close()
 
-def makeID(first, last, IDNUM, major, dash, year):
-  print(first, last, IDNUM, major, dash, year)
-  idlen = len(IDNUM) 
+def makeID(first, last, Idnum, major, line, year):
+  print(first, last, Idnum, major, line, year)
+  idlen = len(Idnum)
 
   while len(last) < 5:
     last = last + "X"
-  id = first[0] + last + IDNUM[idlen - 3: ]
+  id = first[0] + last + Idnum[idlen - 3: ]
   return id 
 
 if __name__ == '__main__':
